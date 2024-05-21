@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Ошибка загрузки услуг:', error));
     }
 
-    function loadArticles() {
+    /*function loadArticles() {
         fetch('articles.php?action=list')
         .then(response => response.json())
         .then(data => {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         })
         .catch(error => console.error('Ошибка загрузки статей:', error));
-    }
+    }*/
 
     function setupAuthForms() {
         const loginForm = document.getElementById('loginForm');
@@ -216,7 +216,7 @@ function setupFloatingTeeth() {
     const teethContainer = document.querySelector('.floating-teeth');
     const teethImages = ['tooth1.png', 'tooth2.png', 'tooth3.png'];
 
-    for (let i = 0; i < 20; i++) {
+    /*for (let i = 0; i < 20; i++) {
         const img = document.createElement('img');
         img.src = `images/${teethImages[Math.floor(Math.random() * teethImages.length)]}`;
         img.className = 'tooth';
@@ -227,7 +227,7 @@ function setupFloatingTeeth() {
         img.style.position = 'absolute';
         img.style.zIndex = '-1';
         teethContainer.appendChild(img);
-    }
+    }*/
 
     document.addEventListener('mousemove', function(e) {
         const teeth = document.querySelectorAll('.floating-teeth .tooth');
